@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thisis Kyle Miles - Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="./attached_assets/thisklmLOGO_1750965952082.jpg" alt="Thisis Kyle Miles Logo" class="logo">
+            </div>
+            <div class="nav-center">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-shape"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm Kyle</h1>
+            <div class="hero-subtitle">
+                <span class="typing-text" id="typingText"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">Passionate about creating innovative solutions and bringing ideas to life
+                through code</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="./attached_assets/headshot_1750969646181.jpg" alt="Kyle Miles Profile"
+                        class="profile-img">
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <p>I'm a passionate software development student with a growing portfolio of web projects. I love
+                        building creative solutions and learning new technologies.</p>
+                    <p>Outside of coding, I'm into the gym, fishing, gaming, and spending time with my dog Buddy. I
+                        believe in continuous learning and pushing the boundaries of what's possible with technology.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Years Learning</p>
+                        </div>
+                        <div class="stat">
+                            <h3>∞</h3>
+                            <p>Cups of Coffee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with user authentication, payment processing, and admin
+                            dashboard.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Responsive task management application with drag-and-drop functionality and real-time
+                            updates.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>CSS3</span>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Visualization Dashboard</h3>
+                        <p>Interactive dashboard for data analysis with real-time charts and customizable widgets.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>D3.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Web Game Engine</h3>
+                        <p>Lightweight 2D game engine built from scratch with physics simulation and sprite animation.
+                        </p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Canvas API</span>
+                            <span>WebGL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Chatbot</h3>
+                        <p>Intelligent chatbot with natural language processing and machine learning capabilities.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Flask</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cloud Storage App</h3>
+                        <p>Responsive design website</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Skills & Technologies</h2>
+            <div class="skills-content">
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-percent">100%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-percent">100%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Backend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="70">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Tools & Others</h3>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-text" data-aos="fade-right">
+                    <h3>Let's Work Together</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or
+                        just want to say hi, feel free to reach out!</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>kylemiles1020@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (919) 619-8047</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>North Carolina</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <div class="btn-ripple"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://github.com/kylemilesdev-bit" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/kylemiles" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <p class="footer-text">&copy; 2024 Thisis Kyle Miles. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. I'll get back to you soon!</p>
+            <button class="btn btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
